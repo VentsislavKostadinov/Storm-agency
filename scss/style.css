@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  font-family: Montserrat, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* Navigation */
+.navbar {
+  background: #000000; }
+  .navbar .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #ffffff; }
+    .navbar .navbar-brand span {
+      color: #cc0000;
+      font-weight: bold; }
+
+#navbar-background .navbar-nav .nav-link {
+  color: #ffffff; }
+  #navbar-background .navbar-nav .nav-link:hover {
+    color: #ffffff; }
+
+.navbar-nav .nav-link {
+  padding-top: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 70px 0 auto; }
+
+/* Hover Effect */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #cc0000;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0; }
+
+/* Carousel */
+.carousel-inner img {
+  width: 100%;
+  height: calc(100vh - 62px);
+  font-family: Montserrat, sans-serif; }
+
+/* Header */
+header > h3 {
+  padding-top: 25px;
+  font-size: 35px; }
+
+/* Travel Business Consulting Section */
+.travel-business-consulting {
+  text-align: center;
+  margin: 50px; }
+  .travel-business-consulting article {
+    display: inline-block; }
+    .travel-business-consulting article .icon {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background: #090821;
+      border-radius: 50%;
+      color: #ffffff;
+      margin-right: 5px; }
+      .travel-business-consulting article .icon p {
+        text-align: center; }
+
+/* Banner Section*/
+.banner img {
+  opacity: 0.3;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background: no-repeat center center fixed; }
+.banner .img-fluid {
+  border: none; }
+.banner .card-img-top {
+  text-decoration: none;
+  height: 150px;
+  border-radius: 0; }
+.banner h4 {
+  padding-top: 22px;
+  font-weight: bold;
+  text-align: center; }
+.banner span {
+  color: #c79d63; }
+
+/* Traders Section */
+.traders .bg-light {
+  border: none; }
+.traders .bg-light > h3 {
+  text-align: center;
+  padding-top: 19px; }
+.traders article {
+  text-align: center;
+  display: inline-block;
+  margin-left: -3px;
+  margin-bottom: 9px; }
+
+/* Consulting Woman Section */
+.consulting-woman .img-fluid {
+  border: none; }
+.consulting-woman img {
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background: no-repeat center center fixed; }
+.consulting-woman .card-img-top {
+  text-decoration: none;
+  border-radius: 0; }
+.consulting-woman .card-body {
+  width: 500px;
+  height: 205px;
+  padding: 12px 60px 53px 60px;
+  background: rgba(255, 255, 255, 0.7); }
+  .consulting-woman .card-body .woman-footer {
+    height: 150px; }
+    .consulting-woman .card-body .woman-footer .card-text {
+      float: right;
+      font-size: 11px; }
+    .consulting-woman .card-body .woman-footer h4 {
+      float: right; }
+
+/* Responsive Consulting Woman */
+@media (max-width: 730px) {
+  .consulting-woman .card-body {
+    display: none; } }
+/* Partners Section */
+.partners img {
+  width: 100px;
+  height: 60px;
+  display: inline; }
+
+/* Footer Section */
+footer {
+  padding-top: 10px;
+  color: #ffffff;
+  background-color: #080820;
+  text-align: center; }
+  footer .btn-primary {
+    background-color: #ff66ff;
+    border: 1px solid #ff66ff; }
+    footer .btn-primary:hover {
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid #ffffff; }
+  footer .follow-me .fa-github {
+    color: #ffffff;
+    font-size: 3em; }
+
+/*# sourceMappingURL=style.css.map */

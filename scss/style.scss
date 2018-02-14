@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat" );
+
+$font-family: Montserrat, sans-serif;
+$white-color: #ffffff;
+$black-color: #000000;
+
+@mixin background-image {
+
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background: no-repeat center center fixed;
+}
+
+
+body {
+
+ font-family: $font-family;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation */
+
+.navbar {
+  background: $black-color;
+
+  .navbar-brand {
+
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $white-color;
+
+    span {
+      color: #cc0000;
+      font-weight: bold;
+    }
+  }
+}
+
+#navbar-background .navbar-nav .nav-link {
+
+  color: $white-color;
+
+  &:hover {color: $white-color;}
+}
+
+.navbar-nav .nav-link {
+
+  padding-top: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 70px 0 auto;
+
+}
+
+/* Hover Effect */
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #cc0000;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Carousel */
+.carousel-inner img {
+
+  width: 100%;
+  height: calc(100vh - 62px);
+  font-family: $font-family;
+
+}
+
+/* Header */
+
+header > h3 {
+  padding-top: 25px;
+  font-size: 35px;
+}
+
+/* Travel Business Consulting Section */
+
+  .travel-business-consulting {
+    text-align: center;
+    margin: 50px;
+
+    article {
+
+      display: inline-block;
+
+      .icon {
+
+        display: inline-block;
+        vertical-align: top;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: #090821;
+        border-radius: 50%;
+        color: $white-color;
+        margin-right: 5px;
+
+        p {text-align: center;}
+      }
+    }
+  }
+
+
+ /* Banner Section*/
+.banner {
+
+  img {
+
+    opacity: 0.3;
+    @include background-image();
+
+  }
+
+  .img-fluid {
+    border: none;
+  }
+
+  .card-img-top {
+
+   text-decoration: none;
+    height: 150px;
+    border-radius: 0;
+  }
+
+  h4 {
+    padding-top: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  span {color: #c79d63;}
+}
+
+/* Traders Section */
+
+.traders {
+
+  .bg-light {border: none;}
+
+  .bg-light > h3{
+    text-align: center;
+    padding-top: 19px;
+  }
+
+  article {
+    text-align: center;
+    display: inline-block;
+   margin-left: -3px;
+    margin-bottom: 9px;
+  }
+}
+
+/* Consulting Woman Section */
+
+.consulting-woman {
+
+  .img-fluid {border: none;}
+
+  img {@include background-image();}
+
+  .card-img-top {
+    text-decoration: none;
+    border-radius: 0;
+  }
+
+  .card-body {
+
+    width: 500px;
+    height: 205px;
+    padding: 12px 60px 53px 60px;
+    background: rgba(255, 255, 255, .7);
+
+    .woman-footer { height: 150px;
+
+      .card-text {
+        float: right;
+        font-size: 11px;
+      }
+
+      h4 {float: right;} } } }
+
+/* Responsive Consulting Woman */
+
+ @media (max-width: 730px) {
+
+  .consulting-woman {
+
+    .card-body {display: none;}
+  }
+}
+
+/* Partners Section */
+
+.partners {
+
+  img {
+    width: 100px;
+    height: 60px;
+    display: inline;
+  }
+}
+
+/* Footer Section */
+
+footer {
+
+  padding-top: 10px;
+  color: $white-color;
+  background-color: #080820;
+  text-align: center;
+
+  .btn-primary {
+
+    background-color: #ff66ff;
+   border: 1px solid #ff66ff;
+
+  &:hover {
+
+    background-color: $white-color;
+    color: $black-color;
+    border: 1px solid $white-color;
+
+  }
+  }
+
+  .follow-me {
+
+    .fa-github {
+
+      color: $white-color;
+      font-size: 3em;
+    }
+  }
+}
+
+
+
