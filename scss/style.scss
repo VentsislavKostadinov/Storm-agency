@@ -25,7 +25,6 @@ body {
 /* Navigation */
 
 .navbar {
-  background: $black-color;
 
   .navbar-brand {
 
@@ -34,6 +33,7 @@ body {
     font-size: 20px;
     color: $white-color;
 
+
     span {
       color: #cc0000;
       font-weight: bold;
@@ -41,21 +41,20 @@ body {
   }
 }
 
-#navbar-background .navbar-nav .nav-link {
+
+ .navbar-dark .navbar-nav .nav-link {
 
   color: $white-color;
-
   &:hover {color: $white-color;}
 }
 
-.navbar-nav .nav-link {
+.navbar-nav  .nav-link {
 
-  padding-top: 15px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin: 0 70px 0 auto;
-
-}
+    padding-top: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0 70px 0 auto;
+  }
 
 /* Hover Effect */
 
